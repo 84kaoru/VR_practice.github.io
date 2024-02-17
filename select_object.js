@@ -11,3 +11,10 @@ boxes.forEach((box) => {
     
 });
 
+
+var rightHand = document.getElementById("rightHand");
+
+rightHand.addEventListener('pinchmoved',function(event){
+    var boxes = document.getElementById("box")
+    boxes.setAttribute("position", event.detail.position);
+});
