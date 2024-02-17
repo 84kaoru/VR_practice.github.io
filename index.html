@@ -9,9 +9,10 @@
 </head>
 <body>
     <a-scene>
-        <a-box color="red" animation="property:rotation; to:0 360 0; dur:3000; loop:true; easing:linear;"></a-box>
         <a-entity id="leftHand" hand-tracking-controls="hand: left;"></a-entity>
         <a-entity id="rightHand" hand-tracking-controls="hand: right;"></a-entity>
+        <a-box color="red" animation="property:rotation; to:0 360 0; dur:3000; loop:true; easing:linear;"></a-box>
+        
         <a-camera position="0 0 3">
             <a-cursor></a-cursor>
         </a-camera>
