@@ -8,10 +8,10 @@
     <title>VRの練習</title>
 </head>
 <body>
-    <a-scene>
-        <a-entity id="leftHand" hand-tracking-controls="hand: left;"></a-entity>
-        <a-entity id="rightHand" hand-tracking-controls="hand: right;"></a-entity>
-        <a-box id="box" color="red" animation="property:rotation; to:0 360 0; dur:3000; loop:true; easing:linear;"></a-box>
+    <a-scene obb-collider="showColliders: false">
+        <a-entity id="leftHand" hand-tracking-grab-controls="hand: left;"></a-entity>
+        <a-entity id="rightHand" hand-tracking-grab-controls="hand: right;"></a-entity>
+        <a-box grabbable id="box" color="red" animation="property:rotation; to:0 360 0; dur:3000; loop:true; easing:linear;"></a-box>
         
         <a-camera position="0 0 3">
             <a-cursor></a-cursor>
